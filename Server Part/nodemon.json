@@ -1,0 +1,6 @@
+{
+    "env": {
+        "mongoUri": "mongodb://localhost/libmgt",
+        "JWT_KEY": "thegraceofourlordjesus"
+    }
+}

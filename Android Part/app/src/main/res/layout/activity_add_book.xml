@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chriseze.cernlib.AddBook">
+    <include layout="@layout/appbar" android:id="@+id/custom_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/custom_toolbar">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Add Book Details"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text2">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingLeft="1dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:focusableInTouchMode="true"
+                    android:hint="ISBN"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingLeft="1dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:hint="Title"
+                    android:focusableInTouchMode="true"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingLeft="1dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:hint="Author"
+                    android:focusableInTouchMode="true"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="1dp"
+                    android:hint="Publisher"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/field"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="1dp"
+                    android:hint="Field"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="1dp"
+                    android:hint="Quantity"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
